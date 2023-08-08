@@ -10,15 +10,17 @@ background-position-y: -11%;
 background-color: #686879 !important;
 }
 .log{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: white;
-  background-color: #22b !important;
+  background-color: #020202 !important;
   width: fit-content;
   border-radius: 4px;
   float: right;
   margin-right: 3%;
   margin-top: 1%;
   border: none;
+  padding: 4px 25px;
+  border-radius: 6px;
 }
 #movies{
 clear: right;
@@ -51,22 +53,22 @@ iframe{
 
 }
 .lft{
-  font-size: 3rem;
+  font-size: 2rem;
   position: absolute;
   top: 58%;
-  right: 7%;
+  right: 14%;
   background: none;
   border: none;
-  color: #43ffff;
+  color: white;
 }
 .rght{
   position: absolute;
-  font-size: 3rem;
+  font-size: 2rem;
   top: 58%;
   background: transparent;
   border: none;
-  left: 1%;
-  color: #43ffff;
+  left: 11%;
+  color: white;
 }
 .info{
     position: relative;
@@ -103,26 +105,29 @@ i{
   padding:10px;
 }
 .banner-img{
-  float: right;
-margin-top: 1.5%;
-margin-right: 3%;
-border: 2px dashed #fff;
-box-shadow: 1px -20px 20px 1px white;
-border-radius: 5px;
+  display: block;
+  margin-top: 1.5%;
+  margin-left: 4%;
+  border: 2px dashed #fff;
+  box-shadow: 1px -20px 20px 1px white;
+  border-radius: 5px;
+  width: fit-content;
 }
 .img-style{
   width: 650px;
-height: 450px;
+  height: 450px;
 }
 .plan-btn{
   font-size: 1.5rem;
-  margin-left: 20%;
-  width: 100%;
+  width: 35%;
   background-color: black;
   color: #fff;
   border-radius: 5px;
   padding: 7px;
   box-shadow: 2px 1px 10px 1px #5ed9e6;
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-bottom: 2%;
 }
 .red-text{
   color:red;
@@ -302,4 +307,53 @@ height: 450px;
     margin-right:0;
     font-weight:600
   }
+}
+@media screen and (max-width:480px) {
+  .img-style {
+    width: 427px !important;
+    height: 356px !important;
+  }
+  .slider iframe{
+    width: 100% !important;
+  }
+  .rght{
+    margin-top: 24%;
+    margin-left: -16%;
+  }
+  .lft{
+    margin-top: 23%;
+    margin-right: -19%;
+  }
+  .plan-btn{
+    width: 92%;
+  }
+}
+.slider-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.slider iframe {
+  margin: auto;
+  width: 60%;
+  border: none;
+  height: 310px;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
 }

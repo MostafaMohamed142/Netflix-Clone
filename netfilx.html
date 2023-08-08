@@ -6,8 +6,8 @@
         <link rel="stylesheet" type="text/css" href="css/clone.css"/>
         <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css"/>
         <script src="https://kit.fontawesome.com/62e308d8d0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-        <script src="js/move.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        
          
     </head>
         <body>
@@ -17,16 +17,18 @@
                 <h2 style="  font-size: 2rem; margin-top: 5%; color:#fff; margin-left: -2%; ">
                     Up Coming On Netfilx
                 </h2>
-                    <div class="imgs">
-                        <iframe src="https://www.youtube.com/embed/zcI6SFiK_yk" title="YouTube video player" frameborder="0"  allowfullscreen></iframe> 
-                        <iframe src="https://www.youtube.com/embed/1ygQATx7_4g" title="YouTube video player" frameborder="0"  allowfullscreen></iframe>
-                        <iframe src="https://www.youtube.com/embed/IN5TD4VRcSM" title="YouTube video player" frameborder="0"  allowfullscreen></iframe>
-                    
-                    <div class="btns">
-                    <button class="rght"><i class="fas fa-chevron-left"></i></button>
-                    <button class="lft"><i class="fas fa-chevron-right"></i></button>
-                    </div>
-                    </div>
+                <div class="slider-container">
+                  <div class="slider">
+                    <iframe src="https://www.youtube.com/embed/zcI6SFiK_yk" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/1ygQATx7_4g" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/IN5TD4VRcSM" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                  <div class="btns">
+                    <button class="lft"><i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="rght"><i class="fa-solid fa-arrow-left"></i></button>
+                  </div>
+                </div>
+                
                </div>
             </section>
        <div class="txt">
@@ -42,10 +44,9 @@
              
                   <div class="banner-img" >
                           <img src="images/panner.jpg" alt="banner" class="img-style"/>
+                          <button class="plan-btn">Choose Your Plan <span class="red-text">From Here</span> </button>
                   </div>      
-                  <div class="check-plan">
-                    <button class="plan-btn">Choose Your Plan <span class="red-text">From Here</span> </button>
-                </div>  
+                    
                   
                   
                  
@@ -104,5 +105,7 @@
             </div>
           </div>
     </footer>
+    <script src="js/move.js"></script>
     </body>
+
 </html>
